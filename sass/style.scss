@@ -1,0 +1,295 @@
+$primary-color: rgba(1, 1, 137, 0.323);
+$overlay-color: rgba(0, 162, 234, 0.4);
+$secondary-color: rgba(#00a2ea, 0.796);
+$menu-speed: 0.75s;
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	line-height: 1.4;
+}
+
+.container {
+	max-width: 960px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 3rem;
+}
+
+.showcase {
+	background-color: $primary-color;
+	color: white;
+	height: 100vh;
+	position: relative;
+}
+
+.showcase::before {
+	content: '';
+	background-image: url(../img/close-up-pen-with-tablet-table.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.showcase-inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	h1 {
+		font-size: 4rem;
+	}
+	p {
+		font-size: 1.3rem;
+	}
+}
+
+.btn {
+	display: inline-block;
+	margin-top: 1rem;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 0.5rem 2rem;
+	text-decoration: none;
+	color: white;
+	background-color: $secondary-color;
+	transition: opacity 0.5s ease-in;
+	font-weight: bold;
+}
+
+.btn:hover,
+.service-btn:hover {
+	opacity: 0.5;
+}
+
+.menu-wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.toggler {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	opacity: 0;
+}
+
+//
+
+.toggle-btn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 60px;
+	height: 60px;
+	color: white;
+	font-size: 2rem;
+	padding: 1rem;
+	transition: transform 0.4s ease;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.overlay {
+	background-color: $overlay-color;
+	width: 200vw;
+	height: 200vh;
+	display: flex;
+	flex: none;
+	align-items: center;
+	justify-content: center;
+	transform: scale(0);
+	transition: all 0.4s ease;
+}
+
+.overlay > div {
+	text-align: center;
+	max-width: 90vw;
+	max-height: 100vh;
+	opacity: 0;
+	transition: all 0.4s ease;
+}
+
+.nav-items {
+	position: relative;
+	border: 2px solid white;
+	top: 0;
+	height: 90vh;
+	background-color: rgba(0, 162, 234, 0.5);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 20px;
+	justify-content: center;
+
+	li {
+		z-index: 2;
+
+		list-style: none;
+		padding: 1rem;
+	}
+	a {
+		cursor: pointer;
+		display: inline-block;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 20px;
+		padding: 1rem 4rem;
+		text-decoration: none;
+		color: white;
+		transition: opacity 0.5s ease-in;
+	}
+}
+
+.nav-items::before {
+	content: '';
+	background-color: $secondary-color;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.nav-items a:hover {
+	background-color: white;
+	border-radius: 5px;
+	color: $secondary-color;
+}
+
+.logo {
+	position: absolute;
+	top: 20%;
+	left: 88%;
+	transform: translate(-50%, -50%);
+	background-image: url(../img/HERE.svg);
+	height: 350px;
+	width: 350px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+// SERVICES
+
+.service-elements {
+	margin-top: 2rem;
+	border-radius: 5px;
+	border: 2px solid white;
+	display: flex;
+
+	overflow: hidden;
+}
+
+.service-btn {
+	cursor: pointer;
+	border-right: 2px solid white;
+	padding: 1rem 2rem;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	background-color: $secondary-color;
+	transition: opacity 0.5s ease-in;
+	font-size: 24px;
+}
+
+.service-btn:last-child {
+	border: none;
+}
+
+// CONTACT FORM
+form {
+	width: 100%;
+	margin: 2rem auto;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+input[type='text'],
+input[type='email'] {
+	width: 70%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+textarea {
+	height: 50%;
+	max-height: 70%;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+button[type='submit'] {
+	display: inline-block;
+	margin-top: 1rem;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 0.5rem 2rem;
+	text-decoration: none;
+	color: white;
+	background-color: $secondary-color;
+	transition: opacity 0.5s ease-in;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+button[type='submit']:hover {
+	opacity: 0.5;
+}
+
+// SHOWMENU
+
+.toggler:checked ~ .menu {
+	visibility: visible;
+}
+
+.toggler:checked ~ .menu > .overlay {
+	transform: scale(1);
+	transition-duration: $menu-speed;
+}
+
+.toggler:checked ~ .menu > .overlay > div {
+	opacity: 1;
+	transition: opacity 0.4s ease;
+}
