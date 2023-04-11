@@ -264,18 +264,4 @@ button[type=submit] {
 
 button[type=submit]:hover {
   opacity: 0.5;
-}
-
-.toggler:checked ~ .menu {
-  visibility: visible;
-}
-
-.toggler:checked ~ .menu > .overlay {
-  transform: scale(1);
-  transition-duration: 0.75s;
-}
-
-.toggler:checked ~ .menu > .overlay > div {
-  opacity: 1;
-  transition: opacity 0.4s ease;
 }/*# sourceMappingURL=style.css.map */
