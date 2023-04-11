@@ -278,18 +278,4 @@ button[type='submit']:hover {
 	opacity: 0.5;
 }
 
-// SHOWMENU
 
-.toggler:checked ~ .menu {
-	visibility: visible;
-}
-
-.toggler:checked ~ .menu > .overlay {
-	transform: scale(1);
-	transition-duration: $menu-speed;
-}
-
-.toggler:checked ~ .menu > .overlay > div {
-	opacity: 1;
-	transition: opacity 0.4s ease;
-}
