@@ -312,7 +312,6 @@ button[type='submit']:hover {
 		margin-top: 2rem;
 		display: flex;
 		border-radius: 5px;
-		;
 		justify-content: space-evenly;
 		align-items: center;
 
@@ -320,7 +319,6 @@ button[type='submit']:hover {
 	}
 	.service-btn {
 		cursor: pointer;
-		
 
 		padding: 1rem 1.5rem;
 		text-decoration: none;
@@ -332,7 +330,6 @@ button[type='submit']:hover {
 		border-right: 2px solid white;
 	}
 }
-
 
 @media (min-width: 768px) and (max-width: 992px) {
 	.logo {
@@ -369,7 +366,6 @@ button[type='submit']:hover {
 	}
 	.service-btn {
 		cursor: pointer;
-		
 
 		padding: 0.8rem 1rem;
 		text-decoration: none;
@@ -407,7 +403,7 @@ button[type='submit']:hover {
 	.service-elements {
 		margin-top: 2rem;
 		display: flex;
-
+		gap: 0.5rem;
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
@@ -417,9 +413,9 @@ button[type='submit']:hover {
 	.service-btn {
 		width: 70%;
 		cursor: pointer;
-		border-bottom: 2px solid white;
-		border-right: none;
+		border: 2px solid white;
 		padding: 0.5rem 1rem;
+		border-radius: 2px;
 		text-decoration: none;
 		color: white;
 		font-weight: bold;
@@ -427,7 +423,11 @@ button[type='submit']:hover {
 		transition: opacity 0.5s ease-in;
 		font-size: 16px;
 	}
+	.service-btn:last-child {
+		border: 2px solid white;
+	}
 }
+
 @media (max-width: 575px) {
 	.logo {
 		top: 7%;
@@ -458,14 +458,14 @@ button[type='submit']:hover {
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
-
+		gap: 0.3rem;
 		overflow: hidden;
 	}
 	.service-btn {
 		cursor: pointer;
-		border-bottom: 2px solid white;
-		border-right: none;
-width: 80%;
+		border: 2px solid white;
+		border-radius: 2px;
+		width: 80%;
 		padding: 0.5rem 1rem;
 		text-decoration: none;
 		color: white;
@@ -473,5 +473,8 @@ width: 80%;
 		background-color: $secondary-color;
 		transition: opacity 0.5s ease-in;
 		font-size: 12px;
+	}
+	.service-btn:last-child {
+		border: 2px solid white;
 	}
 }
