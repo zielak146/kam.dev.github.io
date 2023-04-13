@@ -18,3 +18,4 @@ toggler.addEventListener('change', function() {
     drop.style.transition = 'opacity 0.4s ease';
   }
 });
+

@@ -1,4 +1,19 @@
-@import url(../sass/media.scss);
+@media (max-width: 575.98px) {
+  .showcase-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+  .showcase-inner h1 {
+    font-size: 2rem;
+  }
+  .showcase-inner p {
+    font-size: 1rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -202,21 +217,23 @@ body {
 .service-elements {
   margin-top: 2rem;
   border-radius: 5px;
-  border: 2px solid white;
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   overflow: hidden;
 }
 
 .service-btn {
   cursor: pointer;
-  border-right: 2px solid white;
+  width: 100%;
   padding: 1rem 2rem;
   text-decoration: none;
   color: white;
   font-weight: bold;
   background-color: rgba(0, 162, 234, 0.796);
   transition: opacity 0.5s ease-in;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .service-btn:last-child {
@@ -267,139 +284,132 @@ button[type=submit]:hover {
   opacity: 0.5;
 }
 
-@media (max-width: 818px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .logo {
-    position: absolute;
-    top: 17%;
-    left: 84%;
+    top: 15%;
+    left: 80%;
+    height: 300px;
+    width: 300px;
   }
-}
-@media (max-width: 700px) {
-  .logo {
-    position: absolute;
-    left: 50%;
-  }
-}
-@media (max-width: 375px) {
-  .showcase {
+  .showcase-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     height: 100%;
-    display: flex;
-    scroll-behavior: smooth;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .showcase .logo {
-    top: 10%;
-    height: 200px;
-    width: 200px;
-  }
-  .showcase h1 {
-    font-size: 32px;
-    margin-bottom: 1rem;
-    margin-top: 3rem;
-  }
-  .showcase p {
-    font-size: 16px;
-  }
-}
-@media (max-width: 700px) {
-  .showcase {
-    height: 100vh;
-    display: flex;
-    scroll-behavior: smooth;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  .showcase .logo {
-    top: 10%;
-    height: 260px;
-    width: 260px;
-  }
-  .showcase h1 {
-    margin-top: 3rem;
-    font-size: 48px;
-  }
-  .showcase p {
-    font-size: 24px;
-    margin-bottom: 1rem;
-  }
-  .showcase .btn {
-    margin-top: 2rem;
-  }
-}
-@media (max-width: 412px) {
-  .showcase {
-    height: 100vh;
-    display: flex;
-    scroll-behavior: smooth;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  .showcase .logo {
-    top: 10%;
-    height: 230px;
-    width: 230px;
-  }
-  .showcase h1 {
-    margin-top: 2rem;
-    font-size: 40px;
-  }
-  .showcase p {
-    font-size: 18px;
-    margin-bottom: 1rem;
-  }
-  .showcase .btn {
-    margin-top: 2rem;
-  }
-}
-@media (max-width: 375px) {
-  .showcase-inner {
-    height: 100vh;
-    display: flex;
-    scroll-behavior: smooth;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .showcase-inner .logo {
-    top: 10%;
-    height: 200px;
-    width: 200px;
   }
   .showcase-inner h1 {
-    font-size: 36px;
-    margin-bottom: 1rem;
-    margin-top: 10rem;
+    margin-top: 3rem;
+    font-size: 3.5rem;
   }
   .showcase-inner p {
-    font-size: 16px;
+    margin: 0.2rem;
+    font-size: 1.1rem;
   }
-  .btn {
-    margin: 2rem;
-  }
-}
-@media (max-width: 360px) {
-  .showcase-inner {
-    height: 100vh;
+  .service-elements {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    overflow: hidden;
   }
-  .showcase-inner .logo {
+  .service-btn {
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 162, 234, 0.796);
+    transition: opacity 0.5s ease-in;
+    font-size: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .logo {
     top: 10%;
+    left: 88%;
     height: 200px;
     width: 200px;
   }
+  .showcase-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
   .showcase-inner h1 {
-    font-size: 36px;
-    margin-bottom: 0.5rem;
-    margin-top: 10rem;
+    margin-top: 5rem;
+    font-size: 2.5rem;
   }
   .showcase-inner p {
+    margin: 0.2rem;
+    font-size: 0.9rem;
+  }
+  .service-elements {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+  }
+  .service-btn {
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 162, 234, 0.796);
+    transition: opacity 0.5s ease-in;
     font-size: 16px;
-    margin: 0;
+  }
+}
+@media (max-width: 575px) {
+  .logo {
+    top: 7%;
+    left: 50%;
+    height: 150px;
+    width: 150px;
+  }
+  .showcase-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+  .showcase-inner h1 {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+  .showcase-inner p {
+    margin: 0.2rem;
+    font-size: 0.9rem;
+  }
+  .service-elements {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+  }
+  .service-btn {
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 162, 234, 0.796);
+    transition: opacity 0.5s ease-in;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
