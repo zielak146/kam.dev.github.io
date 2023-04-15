@@ -148,9 +148,7 @@ body {
 	top: 0;
 	height: 90vh;
 	background-color: rgba(0, 162, 234, 0.5);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+	
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
@@ -403,7 +401,7 @@ button[type='submit']:hover {
 	.service-elements {
 		margin-top: 2rem;
 		display: flex;
-		gap: 0.5rem;
+		
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
@@ -411,10 +409,10 @@ button[type='submit']:hover {
 		overflow: hidden;
 	}
 	.service-btn {
-		width: 70%;
+		
 		cursor: pointer;
-		border: 2px solid white;
-		padding: 0.5rem 1rem;
+		
+		padding: 0.5rem 2rem;
 		border-radius: 2px;
 		text-decoration: none;
 		color: white;
@@ -423,9 +421,7 @@ button[type='submit']:hover {
 		transition: opacity 0.5s ease-in;
 		font-size: 16px;
 	}
-	.service-btn:last-child {
-		border: 2px solid white;
-	}
+	
 }
 
 @media (max-width: 575px) {
@@ -458,15 +454,15 @@ button[type='submit']:hover {
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
-		gap: 0.3rem;
-		overflow: hidden;
+		// gap: 0.3rem;
+		
 	}
 	.service-btn {
 		cursor: pointer;
-		border: 2px solid white;
+		
 		border-radius: 2px;
-		width: 80%;
-		padding: 0.5rem 1rem;
+		
+		padding: 0.5rem 2rem;
 		text-decoration: none;
 		color: white;
 		font-weight: bold;
@@ -474,7 +470,5 @@ button[type='submit']:hover {
 		transition: opacity 0.5s ease-in;
 		font-size: 12px;
 	}
-	.service-btn:last-child {
-		border: 2px solid white;
-	}
+	
 }
