@@ -367,7 +367,7 @@ button[type=submit]:hover {
     font-size: 16px;
   }
 }
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 575px) and (max-width: 768px) {
   .logo {
     top: 10%;
     left: 88%;
@@ -426,7 +426,7 @@ button[type=submit]:hover {
     height: 100%;
   }
   .showcase-inner h1 {
-    margin-top: 3rem;
+    margin-top: 5rem;
     font-size: 1.5rem;
   }
   .showcase-inner p {
